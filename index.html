@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>VULTIS COMMAND | SYSTEM INITIALIZATION & MISSION</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#1f2020", "surface-container-low": "#131313", "error": "#ed7f64",
+              "on-background": "#e7e5e4", "primary-container": "#434b18", "on-surface-variant": "#acabaa",
+              "surface": "#0e0e0e", "surface-container": "#191a1a", "primary-fixed": "#dfe8a6",
+              "outline-variant": "#484848", "surface-bright": "#2c2c2c", "on-surface": "#e7e5e4",
+              "surface-variant": "#252626", "primary": "#c3cc8c", "background": "#0e0e0e",
+              "on-primary": "#3c4412", "surface-container-lowest": "#000000"
+            },
+            fontFamily: {
+              "headline": ["Inter"], "body": ["Inter"], "label": ["Space Grotesk"]
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; font-size: 18px; }
+        .grid-bg { background-image: radial-gradient(circle, #484848 1px, transparent 1px); background-size: 40px 40px; opacity: 0.1; }
+        body { background-color: #0e0e0e; color: #e7e5e4; }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #000000; }
+        ::-webkit-scrollbar-thumb { background: #484848; }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface font-body selection:bg-primary selection:text-on-primary">
+
+<nav class="flex justify-between items-center w-full px-6 h-12 bg-[#191a1a] fixed top-0 z-50 border-b border-[#484848]/20">
+    <div class="text-lg font-black tracking-tighter text-[#c3cc8c] font-headline">VULTIS_TACTICAL</div>
+    <div class="hidden md:flex gap-8 items-center h-full">
+        <a class="text-[#c3cc8c] border-b-2 border-[#c3cc8c] pb-1 font-headline uppercase tracking-tight text-xs font-bold" href="#home">INITIALIZATION</a>
+        <a class="text-gray-500 hover:text-white transition-colors font-headline uppercase tracking-tight text-xs font-bold" href="#mission">MISSION</a>
+        <a class="text-gray-500 hover:text-white transition-colors font-headline uppercase tracking-tight text-xs font-bold" href="produtos.html">ASSETS</a>
+    </div>
+    <div class="flex items-center gap-6">
+        <div class="text-[#c3cc8c] font-headline uppercase tracking-tight text-xs font-bold">SYSTEM_NOMINAL</div>
+        <div class="text-[#c3cc8c] font-headline uppercase tracking-tight text-xs font-bold">00:00:00_UTC</div>
+    </div>
+</nav>
+
+<main id="home" class="min-h-screen pt-12 relative overflow-hidden flex flex-col">
+    <div class="absolute inset-0 grid-bg pointer-events-none"></div>
+    <div class="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full opacity-10 pointer-events-none">
+        <svg class="w-full h-full stroke-on-surface" fill="none" viewBox="0 0 800 800">
+            <path d="M100 100 L700 100 L700 700 L100 700 Z" stroke-width="0.5"></path>
+            <circle cx="400" cy="400" r="300" stroke-width="0.5"></circle>
+            <path d="M400 50 L400 750" stroke-dasharray="10 10" stroke-width="0.5"></path>
+            <path d="M50 400 L750 400" stroke-dasharray="10 10" stroke-width="0.5"></path>
+            <circle cx="400" cy="400" r="150" stroke-width="0.5"></circle>
+            <path d="M200 200 L600 600 M600 200 L200 600" stroke-width="0.5"></path>
+        </svg>
+    </div>
+
+    <section class="flex-1 flex flex-col justify-center px-12 md:px-24 z-10 py-24">
+        <div class="mb-4 flex items-center gap-4">
+            <span class="w-2 h-2 bg-primary"></span>
+            <span class="font-label text-primary text-[10px] uppercase tracking-[0.3em]">System Authentication Protocol: Active</span>
+        </div>
+        <h1 class="text-6xl md:text-8xl font-black font-headline tracking-tighter leading-none mb-6 max-w-4xl text-white">VULTIS INDUSTRIES</h1>
+        <p class="font-label text-sm md:text-lg text-on-surface-variant max-w-2xl uppercase tracking-widest leading-relaxed mb-12">
+            ADVANCED AEROSPACE & DEFENSE SOLUTIONS. READY FOR MISSION DEPLOYMENT. SECURE ACCESS REQUIRED FOR CLASSIFIED INTEL.
+        </p>
+        <div class="flex flex-col md:flex-row gap-6">
+            <a href="#mission" class="bg-primary text-on-primary px-10 py-5 font-headline font-bold uppercase tracking-widest text-sm hover:bg-primary-dim transition-all text-center">COMMENCE BRIEFING</a>
+            <a href="produtos.html" class="border border-outline-variant/30 text-on-surface px-10 py-5 font-headline font-bold uppercase tracking-widest text-sm hover:bg-surface-bright transition-all text-center">VIEW ASSETS</a>
+        </div>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-4 border-t border-outline-variant/10 bg-surface-container-low px-12 md:px-24 py-12 gap-8 z-10">
+        <div class="flex flex-col gap-2">
+            <span class="font-label text-[9px] text-on-surface-variant uppercase tracking-widest">SATELLITE_LINK</span>
+            <span class="font-label text-lg text-primary">ENCRYPTED_99.8%</span>
+            <div class="w-full h-1 bg-surface-container-high overflow-hidden"><div class="w-[99.8%] h-full bg-primary"></div></div>
+        </div>
+        <div class="flex flex-col gap-2">
+            <span class="font-label text-[9px] text-on-surface-variant uppercase tracking-widest">RESPONSE_LATENCY</span>
+            <span class="font-label text-lg text-white">12.4MS</span>
+            <div class="w-full h-1 bg-surface-container-high overflow-hidden"><div class="w-[20%] h-full bg-primary"></div></div>
+        </div>
+        <div class="flex flex-col gap-2">
+            <span class="font-label text-[9px] text-on-surface-variant uppercase tracking-widest">DRONE_SWARM_STATE</span>
+            <span class="font-label text-lg text-white">READY</span>
+            <div class="w-full h-1 bg-surface-container-high overflow-hidden"><div class="w-full h-full bg-primary"></div></div>
+        </div>
+        <div class="flex flex-col gap-2">
+            <span class="font-label text-[9px] text-on-surface-variant uppercase tracking-widest">AUTH_TOKEN_EXP</span>
+            <span class="font-label text-lg text-error">04:59:59</span>
+            <div class="w-full h-1 bg-surface-container-high overflow-hidden"><div class="w-[45%] h-full bg-error"></div></div>
+        </div>
+    </section>
+</main>
+
+<section id="mission" class="pb-24 pt-12 bg-surface-container-lowest border-t border-outline-variant/10 relative z-20">
+    <header class="p-8 md:p-12 border-b border-outline-variant/10 mb-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="w-2 h-2 bg-primary"></span>
+                <span class="font-label text-xs tracking-[0.3em] text-on-surface-variant uppercase">DEPT_DEFENSE_AERO_01</span>
+            </div>
+            <h2 class="font-headline text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none">
+                MISSION: THE <span class="text-primary">SOVEREIGN</span> INTELLIGENCE
+            </h2>
+        </div>
+    </header>
+
+    <div class="p-6 md:p-12 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div class="lg:col-span-8 flex flex-col gap-8">
+            <div class="bg-surface-container p-8 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 font-label text-[10px] text-primary/40">OBJ_REF: 882-ALPHA</div>
+                <h3 class="font-label text-sm font-bold tracking-[0.2em] text-primary mb-6 flex items-center gap-2 uppercase">
+                    <span class="material-symbols-outlined text-xs">target</span> 01_STRATEGIC_OBJECTIVE
+                </h3>
+                <p class="font-headline text-2xl font-light text-on-surface leading-relaxed mb-8">
+                    Vultis Industries is engineering the transition from human-centered defense to <span class="text-white font-bold">Autonomous Sovereignty</span>. We eliminate the latency of biological decision-making through distributed edge intelligence and secure ISR protocols.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 bg-surface-container-high border-l-2 border-primary/30">
+                        <div class="font-label text-[10px] text-on-surface-variant mb-1 uppercase">Operational Scope</div>
+                        <div class="font-label text-sm text-white uppercase">Defense Autonomy & High-Threat ISR</div>
+                    </div>
+                    <div class="p-4 bg-surface-container-high border-l-2 border-primary/30">
+                        <div class="font-label text-[10px] text-on-surface-variant mb-1 uppercase">Target Domain</div>
+                        <div class="font-label text-sm text-white uppercase">Orbital, Atmospheric, & Sub-Surface</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-surface-container p-6 border-b-2 border-transparent hover:border-primary transition-colors">
+                    <span class="material-symbols-outlined text-primary mb-4">smart_toy</span>
+                    <h4 class="font-label text-xs font-bold tracking-widest text-white mb-3 uppercase">AUTONOMOUS_SYSTEMS</h4>
+                    <p class="text-xs text-on-surface-variant leading-relaxed">Self-healing mesh networks and swarm intelligence for multi-domain tactical advantage.</p>
+                </div>
+                <div class="bg-surface-container p-6 border-b-2 border-transparent hover:border-primary transition-colors">
+                    <span class="material-symbols-outlined text-primary mb-4">rocket_launch</span>
+                    <h4 class="font-label text-xs font-bold tracking-widest text-white mb-3 uppercase">HYPERSONIC_PROPULSION</h4>
+                    <p class="text-xs text-on-surface-variant leading-relaxed">Next-generation thermal management for Mach-5+ atmospheric sustained flight.</p>
+                </div>
+                <div class="bg-surface-container p-6 border-b-2 border-transparent hover:border-primary transition-colors">
+                    <span class="material-symbols-outlined text-primary mb-4">satellite_alt</span>
+                    <h4 class="font-label text-xs font-bold tracking-widest text-white mb-3 uppercase">SECURE_SATCOM</h4>
+                    <p class="text-xs text-on-surface-variant leading-relaxed">Quantum-resistant encryption layers for global real-time asset synchronization.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:col-span-4 flex flex-col gap-6">
+            <div class="bg-surface-container-high h-[400px] relative overflow-hidden grayscale contrast-125">
+                <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                <div class="absolute bottom-6 left-6">
+                    <div class="font-label text-[10px] text-primary mb-1 uppercase tracking-widest">Asset_Visual // 09-K</div>
+                    <div class="font-headline font-bold text-white uppercase text-lg">Hyper-Core V2</div>
+                </div>
+            </div>
+            <div class="bg-surface-container p-6 space-y-4">
+                <div class="flex justify-between items-center border-b border-outline-variant/10 pb-3">
+                    <span class="font-label text-[10px] text-on-surface-variant uppercase">Network_Load</span>
+                    <span class="font-label text-xs text-primary">4.2 TB/S</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-outline-variant/10 pb-3">
+                    <span class="font-label text-[10px] text-on-surface-variant uppercase">Global_Ping</span>
+                    <span class="font-label text-xs text-primary">0.003 MS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="fixed bottom-0 left-0 w-full px-8 py-2 flex justify-between items-center z-50 bg-black border-t border-[#484848]/10 h-10">
+    <div class="font-['Space_Grotesk'] text-[9px] uppercase tracking-[0.2em] text-gray-600">VULTIS_INDUSTRIES_©_2024_CLASSIFIED_ENCRYPTION_ACTIVE</div>
+</footer>
+
+</body>
+</html>

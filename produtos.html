@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>VULTIS_TACTICAL | ASSET_MANAGEMENT</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#1f2020", "surface-container-low": "#131313", "error": "#ed7f64",
+              "on-background": "#e7e5e4", "primary-container": "#434b18", "on-surface-variant": "#acabaa",
+              "surface": "#0e0e0e", "surface-container": "#191a1a", "primary-fixed": "#dfe8a6",
+              "outline-variant": "#484848", "surface-bright": "#2c2c2c", "on-surface": "#e7e5e4",
+              "surface-variant": "#252626", "primary": "#c3cc8c", "background": "#0e0e0e",
+              "on-primary": "#3c4412", "surface-container-lowest": "#000000", "secondary-container": "#3b3b3b",
+              "on-secondary-container": "#c1bfbe"
+            },
+            fontFamily: {
+              "headline": ["Inter"], "body": ["Inter"], "label": ["Space Grotesk"]
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #000000; }
+        ::-webkit-scrollbar-thumb { background: #484848; }
+        body { background-color: #0e0e0e; color: #e7e5e4; cursor: crosshair; }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface font-body overflow-x-hidden selection:bg-primary selection:text-on-primary pt-12">
+
+<nav class="flex justify-between items-center w-full px-6 h-12 bg-[#191a1a] fixed top-0 z-50 border-b border-[#484848]/20">
+    <div class="text-lg font-black tracking-tighter text-[#c3cc8c] font-headline">VULTIS_TACTICAL</div>
+    <div class="hidden md:flex gap-8 items-center h-full">
+        <a class="text-gray-500 hover:text-white transition-colors font-headline uppercase tracking-tight text-xs font-bold" href="index.html#home">INITIALIZATION</a>
+        <a class="text-gray-500 hover:text-white transition-colors font-headline uppercase tracking-tight text-xs font-bold" href="index.html#mission">MISSION</a>
+        <a class="text-[#c3cc8c] border-b-2 border-[#c3cc8c] pb-1 font-headline uppercase tracking-tight text-xs font-bold" href="#">ASSETS</a>
+    </div>
+    <div class="flex items-center gap-6 font-['Inter'] uppercase tracking-tight text-xs font-bold">
+        <span class="text-[#c3cc8c]">SYSTEM_NOMINAL</span>
+        <span class="text-on-surface-variant font-label">21:44:02_UTC</span>
+    </div>
+</nav>
+
+<main class="w-full mt-12 mb-10 p-8 min-h-screen">
+    <header class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+        <div class="space-y-2">
+            <div class="flex items-center gap-3">
+                <div class="w-2 h-2 bg-primary"></div>
+                <h1 class="text-3xl font-black tracking-tighter uppercase font-headline">Asset_Management_Interface</h1>
+            </div>
+            <p class="font-label text-on-surface-variant text-xs tracking-widest uppercase">Global_Deployment_Network // V.2.0.4_STABLE</p>
+        </div>
+        
+        <div class="bg-surface-container flex p-1 border border-outline-variant/10">
+            <button class="px-4 py-2 text-[10px] font-label font-bold bg-primary text-on-primary uppercase tracking-widest">ALL_UNITS</button>
+            <button class="px-4 py-2 text-[10px] font-label text-on-surface-variant hover:text-white uppercase tracking-widest">UAV</button>
+            <button class="px-4 py-2 text-[10px] font-label text-on-surface-variant hover:text-white uppercase tracking-widest">SATCOM</button>
+        </div>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div class="bg-surface-container flex flex-col group border-l-2 border-transparent hover:border-primary transition-all">
+            <div class="bg-surface-container-high p-4 flex justify-between items-center">
+                <h3 class="font-headline font-extrabold text-sm tracking-tighter">URUBU-XK</h3>
+                <span class="px-2 py-0.5 text-[9px] font-label font-bold bg-primary-container text-on-primary-container border border-primary/20">ACTIVE</span>
+            </div>
+            <div class="relative aspect-video bg-black overflow-hidden flex items-center justify-center p-4">
+                <div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#484848_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                </div>
+            <div class="p-4 bg-surface-container-low flex-grow">
+                <div class="grid grid-cols-2 gap-y-3 font-label text-[10px]">
+                    <span class="text-on-surface-variant uppercase tracking-widest">CRUISE_SPD:</span>
+                    <span class="text-right font-bold text-on-surface">70_KM/H</span>
+                    <span class="text-on-surface-variant uppercase tracking-widest">SPEED_MAX:</span>
+                    <span class="text-right font-bold text-on-surface">130_KM/H</span>
+                    <span class="text-on-surface-variant uppercase tracking-widest">RANGE_OPS:</span>
+                    <span class="text-right font-bold text-on-surface">25_KM</span>
+                    <span class="text-on-surface-variant uppercase tracking-widest">PAYLOAD_MAX:</span>
+                    <span class="text-right font-bold text-on-surface">2_KG</span>
+                </div>
+            </div>
+            <a href="produto-urubu-xk.html" class="block w-full py-3 bg-surface-bright text-xs font-headline font-bold uppercase tracking-widest text-on-surface hover:bg-primary hover:text-on-primary transition-colors border-t border-outline-variant/10 text-center cursor-crosshair">
+                SELECT ASSET FOR DATA
+            </a>
+        </div>
+
+        <div class="bg-surface-container flex flex-col group border-l-2 border-transparent hover:border-primary transition-all">
+            <div class="bg-surface-container-high p-4 flex justify-between items-center">
+                <h3 class="font-headline font-extrabold text-sm tracking-tighter">URUBU-XB</h3>
+                <span class="px-2 py-0.5 text-[9px] font-label font-bold bg-primary-container text-on-primary-container border border-primary/20">ACTIVE</span>
+            </div>
+            <div class="relative aspect-video bg-black overflow-hidden flex items-center justify-center p-4">
+                <div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#484848_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                </div>
+            <div class="p-4 bg-surface-container-low flex-grow">
+                <div class="grid grid-cols-2 gap-y-3 font-label text-[10px]">
+                    <span class="text-on-surface-variant uppercase tracking-widest">CRUISE_SPD:</span>
+                    <span class="text-right font-bold text-on-surface">60_KM/H</span>
+                    <span class="text-on-surface-variant uppercase tracking-widest">SPEED_MAX:</span>
+                    <span class="text-right font-bold text-on-surface">120_KM/H</span>
+                    <span class="text-on-surface-variant uppercase tracking-widest">RANGE_OPS:</span>
+                    <span class="text-right font-bold text-on-surface">25_KM</span>
+                    <span class="text-on-surface-variant uppercase tracking-widest">PAYLOAD_MAX:</span>
+                    <span class="text-right font-bold text-on-surface">5_KG</span>
+                </div>
+            </div>
+            <button class="w-full py-3 bg-surface-bright text-xs font-headline font-bold uppercase tracking-widest text-on-surface hover:bg-primary hover:text-on-primary transition-colors border-t border-outline-variant/10">
+                SELECT ASSET FOR DATA
+            </button>
+        </div>
+
+        <div class="bg-surface-container flex flex-col group border-l-2 border-transparent hover:border-primary transition-all">
+            <div class="bg-surface-container-high p-4 flex justify-between items-center">
+                <h3 class="font-headline font-extrabold text-sm tracking-tighter">J.U.L.I.A.</h3>
+                <span class="px-2 py-0.5 text-[9px] font-label font-bold bg-secondary-container text-on-secondary-container border border-outline-variant">PROTOTYPE</span>
+            </div>
+            <div class="relative aspect-video bg-black overflow-hidden flex items-center justify-center p-4">
+                <div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#484848_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                </div>
+            <div class="p-4 bg-surface-container-low flex-grow">
+                <div class="grid grid-cols-2 gap-y-3 font-label text-[10px]">
+                    <span class="text-on-surface-variant uppercase tracking-widest">CRUISE_SPD:</span>
+                    <span class="text-right font-bold text-on-surface">180_KM/H</span>
+                    <span class="text-on-surface-variant uppercase tracking-widest">SPEED_MAX:</span>
+                    <span class="text-right font-bold text-on-surface">360_KM/H</span>
+                    <span class="text-on-surface-variant uppercase tracking-widest">RANGE_OPS:</span>
+                    <span class="text-right font-bold text-on-surface">30_KM</span>
+                    <span class="text-on-surface-variant uppercase tracking-widest">PAYLOAD_MAX:</span>
+                    <span class="text-right font-bold text-on-surface">1_KG</span>
+                </div>
+            </div>
+            <button class="w-full py-3 bg-surface-bright text-xs font-headline font-bold uppercase tracking-widest text-on-surface hover:bg-primary hover:text-on-primary transition-colors border-t border-outline-variant/10">
+                SELECT ASSET FOR DATA
+            </button>
+        </div>
+    </div>
+</main>
+
+<footer class="fixed bottom-0 left-0 w-full px-8 py-2 flex justify-between items-center z-50 bg-black border-t border-[#484848]/10 h-10">
+    <div class="font-['Space_Grotesk'] text-[9px] uppercase tracking-[0.2em] text-gray-600">VULTIS_INDUSTRIES_©_2024_CLASSIFIED_ENCRYPTION_ACTIVE</div>
+</footer>
+
+</body>
+</html>

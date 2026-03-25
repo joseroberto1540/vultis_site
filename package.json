@@ -1,0 +1,16 @@
+{
+  "name": "site-vultis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "release": "release-it"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "release-it": "^19.2.4"
+  }
+}
