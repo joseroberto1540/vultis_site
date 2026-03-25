@@ -39,21 +39,27 @@
 </head>
 <body class="bg-surface-container-lowest text-on-surface font-body selection:bg-primary selection:text-on-primary">
 
-<nav class="flex justify-between items-center w-full px-6 h-12 bg-[#191a1a] fixed top-0 z-50 border-b border-[#484848]/20">
-    <div class="text-lg font-black tracking-tighter text-[#c3cc8c] font-headline">VULTIS_TACTICAL</div>
+<nav class="flex justify-between items-center w-full px-6 h-16 bg-[#191a1a] fixed top-0 z-50 border-b border-[#484848]/20">
+    <a href="index.html#home" class="flex items-center h-full">
+        <img src="imagens/logo.png" alt="Vultis Logo" class="h-10 w-auto object-contain">
+    </a>
+    
     <div class="hidden md:flex gap-8 items-center h-full">
-        <a class="text-[#c3cc8c] border-b-2 border-[#c3cc8c] pb-1 font-headline uppercase tracking-tight text-xs font-bold" href="#home">INITIALIZATION</a>
-        <a class="text-gray-500 hover:text-white transition-colors font-headline uppercase tracking-tight text-xs font-bold" href="#mission">MISSION</a>
-        <a class="text-gray-500 hover:text-white transition-colors font-headline uppercase tracking-tight text-xs font-bold" href="produtos.html">ASSETS</a>
+        <a class="text-white border-b-2 border-white pb-1 font-headline uppercase tracking-tight text-xs font-bold" href="index.html#home">HOME</a>
+        <a class="text-gray-400 hover:text-white transition-colors font-headline uppercase tracking-tight text-xs font-bold" href="produtos.html">PRODUCTS</a>
     </div>
+    
     <div class="flex items-center gap-6">
-        <div class="text-[#c3cc8c] font-headline uppercase tracking-tight text-xs font-bold">SYSTEM_NOMINAL</div>
-        <div class="text-[#c3cc8c] font-headline uppercase tracking-tight text-xs font-bold">00:00:00_UTC</div>
+        <div class="text-white font-headline uppercase tracking-tight text-xs font-bold">SYSTEM_NOMINAL</div>
+        <div class="text-white font-headline uppercase tracking-tight text-xs font-bold">00:00:00_UTC</div>
     </div>
 </nav>
 
-<main id="home" class="min-h-screen pt-12 relative overflow-hidden flex flex-col">
-    <div class="absolute inset-0 grid-bg pointer-events-none"></div>
+<main id="home" class="min-h-screen pt-16 relative overflow-hidden flex flex-col bg-[url('imagens/background.webp')] bg-cover bg-center">
+    
+    <div class="absolute inset-0 bg-black/80 pointer-events-none z-0"></div>
+    
+    <div class="absolute inset-0 grid-bg pointer-events-none z-0"></div>
     <div class="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full opacity-10 pointer-events-none">
         <svg class="w-full h-full stroke-on-surface" fill="none" viewBox="0 0 800 800">
             <path d="M100 100 L700 100 L700 700 L100 700 Z" stroke-width="0.5"></path>
