@@ -1,12 +1,17 @@
 {
   "name": "vultis_site",
   "version": "1.0.0",
+  "description": "Vultis Tactical Interface",
   "scripts": {
     "release": "release-it"
   },
   "release-it": {
     "npm": {
       "publish": false
+    },
+    "git": {
+      "commitMessage": "chore: release v${version}",
+      "requireCleanWorkingDir": true
     },
     "github": {
       "release": true
